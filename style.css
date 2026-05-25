@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "poppins", sans-serif;
 }
 
 body {
@@ -17,7 +17,8 @@ body {
 .container {
   background-color: #fafafa;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgb(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 400px;
   max-width: 100%;
   overflow: hidden;
 }
@@ -51,7 +52,7 @@ body {
   border-radius: 10px;
 }
 
-.form i {
+.form-control i {
   position: absolute;
   top: 45px;
   right: 10px;
@@ -74,10 +75,9 @@ body {
   border-radius: 10px;
   padding: 10px;
   cursor: pointer;
-  transition: 0.5s ease;
 }
 
-/*Error and success*/
+/* Error and success */
 .form-control.error input {
   border-color: #e74c3c;
 }
