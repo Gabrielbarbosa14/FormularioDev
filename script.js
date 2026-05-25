@@ -86,3 +86,28 @@ function checkEmail(email) {
     email,
   );
 }
+
+let btn = document.querySelector(".lnr-eye");
+
+btn.addEventListener("click", function () {
+  let input = document.querySelector("#password");
+
+  if (input.getAttribute("type") == "password") {
+    input.setAttribute("type", "text");
+  } else {
+    input.setAttribute("type", "password");
+  }
+});
+
+/*-------------------------------------------*/
+let btn2 = document.querySelector("#dois");
+
+btn2.addEventListener("click", function () {
+  let input2 = document.querySelector("#password-confirmation");
+
+  if (input2.getAttribute("type") == "password") {
+    input2.setAttribute("type", "text");
+  } else {
+    input2.setAttribute("type", "password");
+  }
+});
